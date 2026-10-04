@@ -1,0 +1,3 @@
+reference task(s) failed -- fix the algorithm before training on the navigation task
+[FAIL] CartPole-v1: 117.2 (threshold 400.0)
+[PASS] Pendulum-v1: -209.7 (threshold -500.0)

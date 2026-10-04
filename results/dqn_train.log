@@ -1,0 +1,4 @@
+dqn seed0: success=0.020 return=0.63
+dqn seed1: success=0.220 return=1.13
+dqn seed2: success=0.140 return=1.15
+DQN ARM COMPLETE

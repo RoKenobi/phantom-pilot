@@ -1,0 +1,45 @@
+algo: ppo
+total_steps: 250000        # reduced-scale run; see README "Compute budget"
+n_envs: 8
+async_envs: false          # in-process envs: 767 steps/s vs 199 (see make_vec_env)
+frame_stack: 4
+curriculum: false          # off so each ablation arm varies exactly one thing
+
+env:
+  action_mode: continuous
+  map_rows: 12
+  map_cols: 12
+  cell_size: 0.5
+  n_rays: 24
+  max_steps: 250
+  goal_radius: 0.25
+  min_separation: 2.0
+  obstacle_density: 0.12
+
+reward:
+  shaping: potential
+  goal: 10.0
+  collision: -10.0
+  step: -0.01
+  clearance_penalty: -0.05
+  clearance_threshold: 0.3
+  jerk_penalty: -0.01
+  gamma: 0.99
+
+lidar:
+  n_rays: 24
+  noise_std: 0.01
+  dropout: 0.02
+
+ppo:
+  lr: 0.0003
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_coef: 0.2
+  update_epochs: 10
+  n_minibatches: 8
+  rollout_steps: 128
+  ent_coef: 0.005
+  vf_coef: 0.5
+  max_grad_norm: 0.5
+  target_kl: 0.03

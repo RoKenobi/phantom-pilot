@@ -1,0 +1,11 @@
+{
+  "algo": "ppo",
+  "seed": 2,
+  "total_steps": 250000,
+  "stages": [
+    "single"
+  ],
+  "final_mean_return": 0.9872785241623707,
+  "final_success_rate": 0.1,
+  "n_episodes": 1049
+}

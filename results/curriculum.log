@@ -1,0 +1,8 @@
+ppo_curriculum seed0: success=0.000 return=0.86 stages=['empty', 'sparse', 'cluttered', 'hard']
+ppo_curriculum seed1: success=0.000 return=0.56 stages=['empty', 'sparse', 'cluttered', 'hard']
+ppo_curriculum seed2: success=0.000 return=2.11 stages=['empty', 'sparse', 'cluttered', 'hard']
+  ppo_curriculum/procedural_unseen: success=0.000 spl=0.000
+  ppo_curriculum/apartment: success=0.033 spl=0.030
+  ppo_curriculum/u_trap: success=0.017 spl=0.015
+  ppo_curriculum/dynamic: success=0.017 spl=0.015
+CURRICULUM COMPLETE

@@ -1,0 +1,11 @@
+{
+  "algo": "dqn",
+  "seed": 2,
+  "total_steps": 250000,
+  "stages": [
+    "single"
+  ],
+  "final_mean_return": 1.147826417916726,
+  "final_success_rate": 0.14,
+  "n_episodes": 1266
+}
